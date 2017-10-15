@@ -2,7 +2,7 @@
 layout: post
 title:  "Building Starcraft2 Bot"
 date:   2017-09-17 00:00:00 +0300
-categories: starcraft c++ tutorial
+categories: starcraft
 ---
 **Introduction**
 
@@ -68,7 +68,7 @@ Apparently (or obviously if we read documentation) unit are only
 signaled idle when they are first become idle. When game starts there
 a couple of steps when all our SCV is still on route to the minerals
 and not registered as assigned on command center. We can fix this by
-adding additional condition of assigned<sub>harvest</sub> == 0 to the guarding
+adding additional condition of assigned_harvesters == 0 to the guarding
 if.
 
 {% highlight c++ %}
